@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111820">
+  <title>PartiGen — Language-Conditioned Humanoid Motion</title>
+  <meta name="description" content="PartiGen: Part-Aware Representations for Language-Conditioned Humanoid Motion Generation. Research, real-world Unitree G1 demonstrations, and paper.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#overview">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="PartiGen home">Parti<span>Gen</span></a>
+    <nav aria-label="Main navigation">
+      <a href="https://arxiv.org/abs/2610.13373" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> arXiv</a>
+      <a href="#video"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4l9 6-9 6z"/></svg> Video</a>
+      <a class="nav-paper" href="https://arxiv.org/pdf/2610.13373" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="paper-title">
+      <video id="hero-video" class="hero-video" muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-label="Selected real-robot motion demonstrations on Unitree G1">
+        <source src="assets/hero-loop.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">FROM LANGUAGE TO HUMANOID MOTION</p>
+        <h1 id="paper-title">Parti<span>Gen</span></h1>
+        <p class="hero-subtitle">Part-Aware Representations for<br>Language-Conditioned Humanoid Motion Generation</p>
+        <div class="hero-links">
+          <a class="button button-light" href="https://arxiv.org/abs/2610.13373" target="_blank" rel="noopener noreferrer">arXiv paper <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#video"><span aria-hidden="true">▶</span> Watch the robot</a>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span><i class="live-dot" aria-hidden="true"></i> Real-world execution · Unitree G1</span>
+        <a href="#overview" class="scroll-link">Explore the work <span aria-hidden="true">↓</span></a>
+        <button id="hero-toggle" class="hero-toggle" type="button" aria-label="Play background video">Play background</button>
+      </div>
+    </section>
+
+    <section class="authors container" id="overview" aria-label="Authors and affiliations">
+      <p class="authors-list">
+        <span>Chuxuan Huang<sup>1,2,†</sup></span>
+        <span>Zhanxiang Cao<sup>3,2,†</sup></span>
+        <span>Tianyue Zhan<sup>3,2</sup></span>
+        <span>Haoyang Li<sup>3,2</sup></span>
+        <span>Yang Zhang<sup>3</sup></span>
+        <span>Liyun Yan<sup>3,2</sup></span>
+        <span>Chenlin Ming<sup>3</sup></span>
+        <span>Keqi Zhu<sup>4,2</sup></span>
+        <span>Yizhi Chen<sup>5,2</sup></span>
+        <span>Shengcheng Fu<sup>5,2</sup></span>
+        <span>Zihao Zhou<sup>3,2</sup></span>
+        <span>Xinyi Peng<sup>5,2</sup></span>
+        <span>Kaixuan Zhang<sup>6</sup></span>
+        <span>Boyang Xing<sup>7</sup></span>
+        <span>Jiawei Bao<sup>7</sup></span>
+        <span>Yang Yang<sup>8</sup></span>
+        <span>Yue Gao<sup>3,2,*</sup></span>
+      </p>
+      <p class="affiliations"><span><sup>1</sup> Fudan University</span><span><sup>2</sup> Shanghai Innovation Institute</span><span><sup>3</sup> Shanghai Jiao Tong University</span><span><sup>4</sup> Zhejiang University</span><span><sup>5</sup> Tongji University</span><span><sup>6</sup> The Chinese University of Hong Kong</span><span><sup>7</sup> Humanoid Robot (Shanghai) Co., Ltd.</span><span><sup>8</sup> Beihang University</span></p>
+      <p class="correspondence"><sup>†</sup> Equal contribution.</p>
+      <p class="correspondence"><sup>*</sup> Corresponding author · <a href="mailto:yuegao@sjtu.edu.cn">Yue Gao</a></p>
+      <div class="resource-links"><a href="https://arxiv.org/pdf/2610.13373" target="_blank" rel="noopener noreferrer">Paper PDF ↗</a><a href="#demonstrations">Motion gallery ↓</a><a href="#citation">BibTeX ↓</a></div>
+    </section>
+
+    <section class="section container" id="video" aria-labelledby="video-title">
+      <div class="section-heading"><p class="eyebrow">SEE IT IN THE REAL WORLD</p><h2 id="video-title">Language in. Motion out.</h2><p>A physical Unitree G1 executes generated motion references.<br class="desktop-break"> The supplied footage pairs real-world execution with simulation.</p></div>
+      <div class="main-video-wrap">
+        <video class="main-video" controls playsinline preload="metadata" poster="assets/stretch.jpg" aria-label="Full 42-second real-world demonstration video">
+          <source src="assets/real-world-full.mp4" type="video/mp4">
+          Your browser does not support video. <a href="assets/real-world-full.mp4">Download the demonstration.</a>
+        </video>
+      </div>
+      <div class="video-caption"><p>Real-robot demonstrations · 42 seconds · Original playback speed</p><a href="assets/real-world-full.mp4" download="PartiGen_real_world_demo.mp4">Download video <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="abstract-section" aria-labelledby="abstract-title">
+      <div class="container narrow"><p class="eyebrow">ABSTRACT</p><h2 id="abstract-title">Local structure.<br>Whole-body coordination.</h2>
+        <p>Translating language into humanoid motion requires coordinating body parts, determining motion duration, and producing references suitable for robot execution. <strong>PartiGen</strong> is a part-aware latent diffusion framework that incorporates anatomical structure into a shared whole-body motion representation. Part-specific attention processes anatomically masked frame features; the outputs are fused to combine local limb information with whole-body context.</p>
+        <p>Conditioned on text and motion history, PartiGen generates motion primitives autoregressively. Forward-kinematics supervision encourages kinematic consistency. After a complete candidate trajectory is generated, a learned end-of-sequence predictor selects a frame-level endpoint. A pretrained, frozen <strong>GRIT</strong> controller tracks the resulting references in MuJoCo and on the physical Unitree G1.</p>
+        <a class="text-link" href="https://arxiv.org/abs/2610.13373" target="_blank" rel="noopener noreferrer">Read the full abstract on arXiv ↗</a>
+      </div>
+    </section>
+
+    <section class="section container gallery-section" id="demonstrations" aria-labelledby="gallery-title">
+      <div class="section-heading"><p class="eyebrow">REAL-WORLD MOTION GALLERY</p><h2 id="gallery-title">One robot. Different instructions.</h2><p>Explore six examples from the supplied demonstration.<br class="desktop-break"> Each clip plays at its original speed.</p></div>
+      <div class="gallery-toolbar"><div class="filters" role="group" aria-label="Filter motion examples"><button type="button" data-filter="all" class="filter active" aria-pressed="true">All motions</button><button type="button" data-filter="locomotion" class="filter" aria-pressed="false">Locomotion</button><button type="button" data-filter="upper" class="filter" aria-pressed="false">Upper body</button><button type="button" data-filter="sequence" class="filter" aria-pressed="false">Action sequence</button></div><button class="gallery-pause" id="gallery-toggle" type="button">Pause all clips</button></div>
+      <div class="motion-grid">
+        <article class="motion-card" data-category="locomotion"><div class="motion-media"><video class="gallery-video" muted loop playsinline controls preload="none" poster="assets/jump.jpg" aria-label="Jumping demonstration"><source data-src="assets/jump.mp4" type="video/mp4"></video><span class="clip-number">01</span></div><div class="motion-caption"><h3>Jumping</h3><p>“A person jumped straight up.”</p></div></article>
+        <article class="motion-card" data-category="upper"><div class="motion-media"><video class="gallery-video" muted loop playsinline controls preload="none" poster="assets/gesture.jpg" aria-label="Left-hand gesture demonstration"><source data-src="assets/gesture.mp4" type="video/mp4"></video><span class="clip-number">02</span></div><div class="motion-caption"><h3>Arm gesture</h3><p>“A person brings their left hand around in front of them.”</p></div></article>
+        <article class="motion-card" data-category="locomotion"><div class="motion-media"><video class="gallery-video" muted loop playsinline controls preload="none" poster="assets/walk.jpg" aria-label="Walking forward and stopping demonstration"><source data-src="assets/walk.mp4" type="video/mp4"></video><span class="clip-number">03</span></div><div class="motion-caption"><h3>Walk &amp; stop</h3><p>“He walked forward slowly and stood still.”</p></div></article>
+        <article class="motion-card" data-category="upper"><div class="motion-media"><video class="gallery-video" muted loop playsinline controls preload="none" poster="assets/stretch.jpg" aria-label="Overhead arm stretching demonstration"><source data-src="assets/stretch.mp4" type="video/mp4"></video><span class="clip-number">04</span></div><div class="motion-caption"><h3>Coordinated stretching</h3><p>“Standing, stretch both arms overhead, then reach each arm to the opposite side.”</p></div></article>
+        <article class="motion-card" data-category="locomotion"><div class="motion-media"><video class="gallery-video" muted loop playsinline controls preload="none" poster="assets/turn.jpg" aria-label="Walking in a semicircle demonstration"><source data-src="assets/turn.mp4" type="video/mp4"></video><span class="clip-number">05</span></div><div class="motion-caption"><h3>Curved walking</h3><p>“A person walks in a counterclockwise semi-circle.”</p></div></article>
+        <article class="motion-card" data-category="sequence"><div class="motion-media"><video class="gallery-video" muted loop playsinline controls preload="none" poster="assets/bend.jpg" aria-label="Walking and bending motion sequence"><source data-src="assets/bend.mp4" type="video/mp4"></video><span class="clip-number">06</span></div><div class="motion-caption"><h3>A sequence of movements</h3><p>“A person walks forward, picks something up off the ground, and places it on a higher object.”</p></div></article>
+      </div>
+      <p class="gallery-note">Captions reproduce the source instructions. The last example demonstrates the motion of picking and placing; no physical object interaction is shown.</p>
+    </section>
+
+    <section class="method-section" id="method" aria-labelledby="method-title"><div class="container">
+      <div class="section-heading"><p class="eyebrow">HOW PARTIGEN WORKS</p><h2 id="method-title">A shared representation,<br>guided by body-part structure.</h2><p>Anatomical inputs inform local features while a single latent<br class="desktop-break"> preserves the context of the whole body.</p></div>
+      <div class="method-flow" aria-label="Language and motion history to latent diffusion, whole-body decoding, endpoint selection, and GRIT tracking">
+        <div class="flow-step"><span class="step-number">01 / CONDITION</span><h3>Text + motion history</h3><p>Describe a behavior and provide the preceding motion.</p></div><span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="flow-step highlighted"><span class="step-number">02 / GENERATE</span><h3>Shared latent diffusion</h3><p>DA-LDM generates motion codes. BP-MVAE decodes whole-body primitives.</p><div class="latent-tag">Shared 128-D latent</div></div><span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="flow-step"><span class="step-number">03 / SELECT</span><h3>Frame-level endpoint</h3><p>EOS selects the endpoint after the full candidate is generated.</p></div><span class="flow-arrow" aria-hidden="true">→</span>
+        <div class="flow-step"><span class="step-number">04 / EXECUTE</span><h3>Frozen GRIT tracker</h3><p>Track the reference with robot-state feedback in simulation and on G1.</p></div>
+      </div>
+      <div class="method-details"><div><h3>Part-aware feature processing</h3><p>Fixed anatomical masks select joint-angle inputs before part-specific attention. Shared root and contact features retain global information; part outputs are fused into one whole-body representation.</p><div class="body-parts"><span>Left leg</span><span>Right leg</span><span>Torso</span><span>Upper body</span><span class="shared-part">→ Shared whole-body latent</span></div></div><div><h3>Kinematic consistency</h3><p>Forward-kinematics supervision and temporal smoothness regularize generated references during training. The generator and pretrained execution controller remain separate components.</p><a class="text-link" href="https://arxiv.org/pdf/2610.13373" target="_blank" rel="noopener noreferrer">Explore the method in the paper ↗</a></div></div>
+    </div></section>
+
+    <section class="section container results-section" aria-labelledby="results-title"><div class="section-heading"><p class="eyebrow">EVALUATION</p><h2 id="results-title">From generated references<br>to physical execution.</h2></div>
+      <div class="results-grid"><div class="result"><span class="result-value">3.165</span><h3>Segment-level FID</h3><p>16.8% lower than TextOp on HumanML3D retargeted to Unitree G1.</p></div><div class="result"><span class="result-value">3.080<span> frames</span></span><h3>Duration MAE</h3><p>Down from 12.471 frames with a fixed-length cutoff, using 16-frame primitives.</p></div><div class="result"><span class="result-value">81.8<span>%</span></span><h3>Simulation screen</h3><p>409 of 500 references pass the posture-based stability screen in MuJoCo.</p></div><div class="result"><span class="result-value">26<span> / 27</span></span><h3>Real-world attempts</h3><p>Author-judged successes after simulation screening and manual selection.</p></div></div>
+      <p class="results-note">Results are reported in the paper. Hardware examples were screened and selected; the real-world result describes these 27 attempted motions.</p>
+    </section>
+
+    <section class="citation-section" id="citation" aria-labelledby="citation-title"><div class="container narrow"><div class="citation-heading"><div><p class="eyebrow">REFERENCE</p><h2 id="citation-title">BibTeX</h2></div><div class="citation-actions"><a href="assets/partigen.bib" download>Download .bib</a><button id="copy-citation" type="button">Copy citation</button></div></div><pre tabindex="0"><code id="bibtex">@misc{huang2026partigen,
+  title={PartiGen: Part-Aware Representations for
+         Language-Conditioned Humanoid Motion Generation},
+  author={Chuxuan Huang and Zhanxiang Cao and Tianyue Zhan and
+          Haoyang Li and Yang Zhang and Liyun Yan and Chenlin Ming and
+          Keqi Zhu and Yizhi Chen and Shengcheng Fu and Zihao Zhou and
+          Xinyi Peng and Kaixuan Zhang and Boyang Xing and Jiawei Bao and
+          Yang Yang and Yue Gao},
+  year={2026},
+  eprint={2610.13373},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2610.13373}
+}</code></pre><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div></section>
+  </main>
+  <footer class="site-footer container"><div><a class="footer-wordmark" href="#top">PartiGen</a><p>Language-conditioned humanoid motion generation.</p></div><div class="footer-info"><a href="https://arxiv.org/abs/2610.13373" target="_blank" rel="noopener noreferrer">arXiv:2610.13373 ↗</a><p>Page design inspired by <a href="https://beyondmimic.github.io/" target="_blank" rel="noopener noreferrer">BeyondMimic</a>.</p></div></footer>
+</body>
+</html>
